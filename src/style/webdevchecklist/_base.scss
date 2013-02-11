@@ -1,0 +1,66 @@
+body {
+	font: {
+		family: $sansFontFamilyVerdana;
+		weight: normal;
+		size: $baseFontSize;
+	}
+	line-height: $baseLineHeight;
+}
+
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1020px;
+}
+
+@include sticky-footer($footerHeight, '.l-main', '.l-footer', '.footer-spacer');
+
+.l-header {
+	padding-top: 1px;
+}
+
+.title {
+	text-align: center;
+}
+
+.b-article {
+	display: inline-block;
+	width: 29%;
+	padding-right: 3%;
+	vertical-align: top;
+}
+
+.b-article__list {
+	@include list-unstyled;
+	li {
+		margin-bottom: .2em;
+	}
+}
+
+.b-article__checkbox {
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-right: 3px;
+}
+
+.sub-list-marker {
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.sub-list {
+	display: none;
+	@include bullets-remove;
+	padding: 0;
+	margin: 0 0 .7em 3em;
+}
+
+.sub-list__show {
+	display: block;
+}
+
+input[type="checkbox"]:checked + label {
+	color: $green;
+	text-decoration: line-through;
+}

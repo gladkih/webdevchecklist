@@ -1,0 +1,37 @@
+{
+  "name": "WebdevChecklist",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/BlackTears/webdevchecklist",
+  "author": {
+    "name": "Maxim Gladkih",
+    "email": "mail@gladkih.su",
+    "url": "http://gladkih.su"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackTears/webdevchecklist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlackTears/webdevchecklist/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/BlackTears/webdevchecklist/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/WebdevChecklist",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17",
+    "grunt-recursive-compass": "~0.1.4",
+    "grunt-contrib-watch": "~0.1.4"
+  },
+  "keywords": []
+}

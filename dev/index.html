@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Список для проверки перед запуском сайта</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel="stylesheet" href="./static/css/style.min.css">
+	<link type="text/plain" rel="author" href="http://webdevchecklist.ru/humans.txt" />
+</head>
+<body>
+	<div class="l-main">
+		<div class="wrapper">
+			<header class="l-header">
+				<h1 class="title">Проверить перед выкладкой</h1>
+			</header>
+			<section class="l-content">
+				<article class="b-article">
+					<h2>Лучшая практика</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="fixbrokenlinks" class="b-article__checkbox">
+							<label for="fixbrokenlinks">Проверка на наличие битых ссылок</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://validator.w3.org/checklink">W3C link checker</a>
+								</li>
+								<li>
+									<a href="http://iwebtool.com/broken_link_checker">iWebTool Broken Link Checker</a>
+								</li>
+								<li>
+									<a href="http://home.snafu.de/tilman/xenulink.html">Xenu</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="spell-check" class="b-article__checkbox">
+							<label for="spell-check">Проверка орфографии</label>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="checkwebsiteinallbrowsers" class="b-article__checkbox">
+							<label for="checkwebsiteinallbrowsers">Проверить в разных браузерах</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://browsershots.org/">BrowserShots.org</a>
+								</li>
+								<li>
+									<a href="https://browserling.com/">Browserling.com</a>
+								</li>
+								<li>
+									<a href="http://spoon.net/browsers">Spoon.net</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="remove'www'subdomain" class="b-article__checkbox">
+							<label for="remove'www'subdomain">Удаление 'www' поддомена</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://keyvan.io/remove-www-prefix-from-urls-with-url-rewrite-module-for-iis-7-0">Remove 'www' in web.config</a>
+								</li>
+								<li>
+									<a href="http://blog.sjinks.pro/administering/352-apache-how-to-redirect-from-www-and-back/">Apache: устанавливаем редирект</a>
+								</li>
+								<li><a href="http://www.thesitewizard.com/apache/redirect-domain-www-subdomain.shtml">How to Redirect from Your Root Domain</a></li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Мобильные</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="mobileokscoreof75+" class="b-article__checkbox">
+							<label for="mobileokscoreof75+">MobileOK: 75+</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://validator.w3.org/mobile/">W3C mobile checker</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="use'viewport'meta-tag" class="b-article__checkbox">
+							<label for="use'viewport'meta-tag">Мета-тег 'viewport'</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/">Don’t Forget the Viewport Meta Tag</a>
+								</li>
+								<li>
+									<a href="http://www.hanselman.com/blog/MakeYourWebsiteMobileAndIPhoneFriendlyAddHomeScreenIPhoneIconsAndAdjustTheViewPort.aspx">Make your website mobile friendly</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="usecorrectinputtypes" class="b-article__checkbox">
+							<label for="usecorrectinputtypes">Нужные элементы формы</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://html5tutorial.info/html5-contact.php">Input type: Email, Url, Phone</a>
+								</li>
+								<li>
+									<a href="http://mobileinputtypes.com/">mobile input types</a>
+								</li>
+								<li>
+									<a href="http://htmlbook.ru/html/input/type">HTML Book</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="manualcheckusingemulators" class="b-article__checkbox">
+							<label for="manualcheckusingemulators">Проверка в эмуляторах</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://screenqueri.es/">Online media query tester</a>
+								</li>
+								<li>
+									<a href="http://www.webdesignerdepot.com/2012/11/6-free-mobile-device-emulators-for-testing-your-site/">6 free mobile emulators</a>
+								</li>
+								<li>
+									<a href="http://www.opera.com/developer/tools/mobile/">Opera Mobile Emulator</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Аналитика</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="uptimemonitoring" class="b-article__checkbox">
+							<label for="uptimemonitoring">Мониторинг</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.uptimerobot.com/">Uptime robot</a>
+								</li>
+								<li>
+									<a href="http://www.gotsitemonitor.com/">GotSiteMonitor.com</a>
+								</li>
+								<li>
+									<a href="http://host-tracker.com/">host-tracker.com</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="trafficanalysis" class="b-article__checkbox">
+							<label for="trafficanalysis">Анализ траффика</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.google.com/analytics">Google Analytics</a>
+								</li>
+								<li>
+									<a href="http://metrika.yandex.ru/">Яндекс.Метрика</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Производительность</h2>
+					<ul class="b-article__list">
+						<li>
+						<input type="checkbox" tabindex="1" id="googlepagespeedscoreof90+" class="b-article__checkbox">
+						<label for="googlepagespeedscoreof90+">Google Page Speed: 90+</label><a class="sub-list-marker">[+]</a>
+						<ul class="sub-list">
+							<li>
+								<a href="https://developers.google.com/speed/pagespeed/">Google Page Speed</a>
+							</li>
+						</ul>
+					</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="yahooyslowscoreof85+" class="b-article__checkbox">
+							<label for="yahooyslowscoreof85+">Yahoo YSlow: 85+</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://yslow.org/">Yahoo's YSlow</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="optimizehttpheaders" class="b-article__checkbox">
+							<label for="optimizehttpheaders">Оптимизация HTTP заголовков</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://redbot.org">redbot.org</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="optimizeimages" class="b-article__checkbox">
+							<label for="optimizeimages">Оптимизация изображений</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="https://github.com/imgo/imgo/">imgo</a>
+								</li>
+								<li>
+									<a href="http://punypng.com/">PunyPNG.com</a>
+								</li>
+								<li>
+									<a href="http://www.smushit.com/ysmush.it/">SmushIt.com</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Юзабилити</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="html5compatibilitycheck" class="b-article__checkbox">
+							<label for="html5compatibilitycheck">Проверка на совместимость HTML5</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://modernizr.com/">Modernizr JS library</a>
+								</li>
+								<li>
+									<a href="http://ie.microsoft.com/testdrive/HTML5/CompatInspector/">Compat Inspector</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="custom404page" class="b-article__checkbox">
+							<label for="custom404page">Оригинальная 404 страница</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.alistapart.com/articles/amoreuseful404/">A more useful 404</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="favicon" class="b-article__checkbox">
+							<label for="favicon">Favicon</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://tools.dynamicdrive.com/favicon/">Online generator</a>
+								</li>
+								<li>
+									<a href="http://www.thesitewizard.com/archive/favicon.shtml">How to properly link a favicon</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="usefriendlyurls" class="b-article__checkbox">
+							<label for="usefriendlyurls">Использование ЧПУ</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.seomoz.org/blog/11-best-practices-for-urls">11 best practices for URLs</a>
+								</li>
+								<li>
+									<a href="http://www.iis.net/learn/extensions/url-rewrite-module/url-rewrite-module-configuration-reference">URL rewriting in IIS</a>
+								</li>
+								<li>
+									<a href="http://httpd.apache.org/docs/current/mod/mod_rewrite.html">URL rewrite in Apache</a>
+								</li>
+							</ul>
+						</li>
+						<li class="optional">
+							<input type="checkbox" tabindex="1" id="addsearchfeature" class="b-article__checkbox">
+							<label for="addsearchfeature">Поиск</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.google.com/cse/">Поиск по сайту Google</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Качество кода</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="htmlvalidation" class="b-article__checkbox">
+							<label for="htmlvalidation">HTML валидатор</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://validator.w3.org/">W3C HTML validator</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="cssvalidation" class="b-article__checkbox">
+							<label for="cssvalidation">CSS валидатор</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://jigsaw.w3.org/css-validator/">W3C CSS validator</a>
+								</li>
+								<li>
+									<a href="http://csslint.net/">Run CSS Lint online</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="worldready" class="b-article__checkbox">
+							<label for="worldready">Проверка кодировки</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://validator.w3.org/i18n-checker/">W3C i18n checker</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="runjslint" class="b-article__checkbox">
+							<label for="runjslint">Проверка JS</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://jslint.org/">Run JSLint online</a>
+								</li>
+								<li>
+									<a href="http://jshint.com/">Run JSHint online</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>SEO</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="senseoscoreof85" class="b-article__checkbox">
+							<label for="senseoscoreof85">SenSEO: 85+</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="https://addons.mozilla.org/en-US/firefox/addon/senseo/">SenSEO for Firefox</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="robotstxt" class="b-article__checkbox">
+							<label for="robotstxt">robots.txt</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://robotstxt.org.ru/">Документация по robots.txt</a>
+								</li>
+								<li>
+									<a href="http://www.robotsgenerator.com/">Онлайн генератор robots.txt</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="xmlsitemap" class="b-article__checkbox">
+							<label for="xmlsitemap">XML карта сайта</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.xml-sitemaps.com/">Онлайн генератор карты сайта</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Семантика</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="addmeaningwithmicrodata" class="b-article__checkbox">
+							<label for="addmeaningwithmicrodata">Микроформаты</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://schema.org/">Schema.org</a>
+								</li>
+								<li>
+									<a href="http://schema-creator.org/">Schema-Creator.org</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="checkthesemantics" class="b-article__checkbox">
+							<label for="checkthesemantics">Проверка на семантику</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.w3.org/2003/12/semantic-extractor.html">W3C semantic extractor</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Доступность</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="accessibilityvalidation" class="b-article__checkbox">
+							<label for="accessibilityvalidation">Специальные проверки</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://accessibility.oit.ncsu.edu/accessibleu/problems.html">Common problems and solutions</a>
+								</li>
+								<li>
+									<a href="http://achecker.ca/checker/index.php">IDI Web Accessibility Checker</a>
+								</li>
+								<li>
+									<a href="http://www.nvda-project.org/">Test using a screen reader</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="colorcontrast" class="b-article__checkbox">
+							<label for="colorcontrast">Цветовая контрастность</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.checkmycolours.com/">Check color contrast online</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="wai-arialandmarks" class="b-article__checkbox">
+							<label for="wai-arialandmarks">WAI-ARIA</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://accessibility.oit.ncsu.edu/blog/2011/06/30/using-aria-landmarks-a-demonstration/">Using WAI-ARIA Landmarks</a>
+								</li>
+								<li>
+									<a href="http://www.alistapart.com/articles/the-accessibility-of-wai-aria/">Guide to WAI-ARIA</a>
+								</li>
+								<li>
+									<a href="http://www.punkchip.com/2010/11/aria-basic-findings/">Practical examples</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>Безопасность</h2>
+					<ul class="b-article__list">
+						<li>
+							<input type="checkbox" tabindex="1" id="followbestpractices" class="b-article__checkbox">
+							<label for="followbestpractices">Follow best practices</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="https://asafaweb.com/">ASafaaWeb security analyzer</a>
+								</li>
+								<li>
+									<a href="https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">OWASP Top 10 project</a>
+								</li>
+								<li>
+									<a href="https://www.owasp.org/index.php/Cheat_Sheets">OWASP Cheat Sheets</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="cross-sitescripting" class="b-article__checkbox">
+							<label for="cross-sitescripting">Межсайтовый скриптинг</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet">XSS cheat sheet</a>
+								</li>
+								<li>
+									<a href="https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet">DOM based XSS cheat sheet</a>
+								</li>
+								<li>
+									<a href="http://www.acunetix.com/cross-site-scripting/scanner/">Free XSS scanner</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" tabindex="1" id="cross-siterequestforgery" class="b-article__checkbox">
+							<label for="cross-siterequestforgery">Подделка запросов</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://www.codinghorror.com/blog/2008/09/cross-site-request-forgeries-and-you.html">Explanation and walkthrough</a>
+								</li>
+								<li>
+									<a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet">CSRF cheat sheet</a>
+								</li>
+							</ul>
+						</li>
+						<li class="optional">
+							<input type="checkbox" tabindex="1" id="secureconnection(ssl)" class="b-article__checkbox">
+							<label for="secureconnection(ssl)">Безопастное подключение (SSL)</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://support.microsoft.com/kb/299875">Setup SSL on IIS 7</a>
+								</li>
+								<li>
+									<a href="http://www.digicert.com/ssl-certificate-installation-apache.htm">Setup SSL on Apache</a>
+								</li>
+								<li>
+									<a href="http://certlogik.com/ssl-checker/">Online SSL checker</a>
+								</li>
+								<li>
+									<a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">Content Security Policy</a>
+								</li>
+							</ul>
+						</li>
+						<li class="optional">
+							<input type="checkbox" tabindex="1" id="httpstricttransportsecurity" class="b-article__checkbox">
+							<label for="httpstricttransportsecurity">HTTPS</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security">MDN Overview</a>
+								</li>
+								<li>
+									<a href="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security">OWASP Overview</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="b-article">
+					<h2>...и последнее</h2>
+					<ul class="b-article__list">
+						<li class="optional">
+							<input type="checkbox" tabindex="1" id="addhumanstxt" class="b-article__checkbox">
+							<label for="addhumanstxt">Добавить humans.txt</label><a class="sub-list-marker">[+]</a>
+							<ul class="sub-list">
+								<li>
+									<a href="http://humanstxt.org/RU">Мы люди, не машины!</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</div>
+		<div class="footer-spacer"></div>
+	</div>
+	<footer class="l-footer">
+		<div class="wrapper">
+			<a href="http://gladkih.su/">Максим Гладких</a>
+		</div>
+	</footer>
+
+	<script src="./static/js/vendor/jquery-1.9.0.min.js"></script>
+	<script src="./static/js/script.min.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-24203363-11']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>

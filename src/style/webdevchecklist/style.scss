@@ -1,0 +1,15 @@
+//  Author: Maxim Gladkih
+//  Mail: mail@gladkih.su
+//  Date: 26.11.12
+//  Time: 14:16
+//  Name: Base file, include all style to this project 
+
+//  Include dark-beer
+ @import "../dark-beer/mixins/_mixins";
+ @import "../dark-beer/stylesheets/_stylesheets";
+
+//  Project variables
+@import "_variables";
+
+//  Base style
+@import "_base";
