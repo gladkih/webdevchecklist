@@ -1,15 +1,13 @@
 # Список для проверки перед запуском сайта
 
-Разработал:
-
-**Гладких Максим**
-http://gladkih.su
+**Разработал**:<br/>
+Гладких Максим<br/>
+http://gladkih.su<br/>
 @blackchildren
-
-**Оригинал**
-Это форк проекта
-<a href="https://github.com/ligershark/webdevchecklist.com" target="_blank">webdevchecklist.com</a>
-
-**Для стилей нужен Dark beer**
-<a href="https://github.com/BlackTears/dark-beer">dark-beer</a>
-Необходимо положить в src/style/
+<hr/>
+**Оригинал**<br/>
+Идея взята с <a href="https://github.com/ligershark/webdevchecklist.com" target="_blank">webdevchecklist.com</a>
+<hr/>
+**Требования**<br/>
+Необходим сборник scss миксинов <a href="https://github.com/BlackTears/dark-beer">dark-beer</a>.<br/>
+Положить в src/style/
