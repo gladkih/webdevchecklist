@@ -1,0 +1,4 @@
+# redirect
+RewriteCond %{HTTP_HOST}  ^www\.(.+)$  [NC]
+RewriteRule ^(.*)         http://%1/$1 [L,R=301]
+
