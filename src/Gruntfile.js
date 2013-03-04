@@ -8,7 +8,8 @@ module.exports = function(grunt) {
 		banner: '/*\n* <%= pkg.title || pkg.name %> - v<%= pkg.version %>\n' +
 			'* Date: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
 			'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-			'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;\n' +
+			'* ————————————————————————————————' +
+			'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
 			'* Email: <%= pkg.author.email %>\n' +
 			'* Url: <%= pkg.author.url %>\n' +
 			'*/\n',
@@ -88,7 +89,7 @@ module.exports = function(grunt) {
 					}
 				},
 				files: {
-					'templates/index.html': 'templates/index.jade'
+					'../dev/index.html': 'templates/index.jade'
 				}
 			},
 			deploy: {
@@ -99,7 +100,7 @@ module.exports = function(grunt) {
 					}
 				},
 				files: {
-					'templates/index.html': 'templates/index.jade'
+					'../dev/index.html': 'templates/index.jade'
 				}
 			}
 		},
