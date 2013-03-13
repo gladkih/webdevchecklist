@@ -1,0 +1,75 @@
+/**
+ * Author: Maxim Gladkih
+ * Mail: mail@gladkih.su
+ * Date: 3/11/13
+ * Time: 10:47 AM
+ * Name: Custom Input
+ */
+//
+//  Custom input
+
+//	wrapper divs
+.custom-checkbox,
+.custom-radio {
+	position: relative;
+	display: inline-block;
+}
+
+// input, label positioning
+.custom-checkbox,
+.custom-radio {
+	input {
+		position: absolute;
+		left: 2px;
+		top: 3px;
+		margin: 0;
+		z-index: 0;
+	}
+}
+
+.custom-checkbox,
+.custom-radio {
+	label {
+		cursor: pointer;
+		display: block;
+		line-height: 1;
+		margin: -5px 0 0;
+		padding: 7px 0 5px 27px;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+// states
+.custom-checkbox {
+	label {
+		background-image: url(../images/sprites.png);
+		background-repeat: no-repeat;
+	}
+}
+
+.custom-checkbox {
+	label {
+		background-position: 0 -107px;
+	}
+}
+
+.custom-checkbox {
+	label {
+		&.hover,
+		&.focus {
+			background-position: 0 -247px;
+		}
+		&.checked {
+			background-position: 0 -387px;
+		}
+		&.checkedHover,
+		&.checkedFocus {
+			background-position: 0 -527px;
+		}
+		&.focus,
+		&.focus {
+			outline: none;
+		}
+	}
+}

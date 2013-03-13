@@ -1,6 +1,8 @@
 body {
+	font-family: "Segoe UI";
+	background: #ede8e2;
 	font: {
-		family: $sansFontFamilyVerdana;
+		//family: "Segoe UI";
 		weight: normal;
 		size: $baseFontSize;
 	}
@@ -12,8 +14,6 @@ body {
 	position: relative;
 	max-width: 1020px;
 }
-
-@include sticky-footer($footerHeight, '.l-main', '.l-footer', '.footer-spacer');
 
 .l-header {
 	padding-top: 1px;

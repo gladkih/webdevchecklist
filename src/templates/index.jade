@@ -384,11 +384,11 @@ html(lang="ru-RU")
 								ul.sub-list
 									li
 										a(href='http://humanstxt.org/RU') Мы люди, не машины!
-			div.footer-spacer
 		footer.l-footer
 			div.wrapper
 				a(href='http://gladkih.su/') Максим Гладких
 	script(src='./static/js/vendor/jquery-1.9.0.min.js')
+	script(src='./static/js/vendor/custom-input.js')
 	script(src='./static/js/script.min.js')
 	script
 		var _gaq = _gaq || [];
@@ -399,3 +399,7 @@ html(lang="ru-RU")
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
+	script
+		$(function(){
+			$('.b-article__checkbox').customInput();
+		});
