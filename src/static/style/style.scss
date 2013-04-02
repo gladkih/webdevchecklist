@@ -1,0 +1,15 @@
+//  Author: Maxim Gladkih
+//  Mail: mail@gladkih.su
+//  Date: 26.11.12 — 14:16
+//  Name: Base file, include all style to this project 
+//  Include dark-beer
+ @import 'dark-beer/stylesheets/reset-global';
+ @import 'includes';
+//  Plugin style
+@import 'custom-input';
+//  Project style
+@import 'base';
+@import 'sidebar';
+@import 'menu';
+@import 'main';
+@import 'footer';

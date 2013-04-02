@@ -1,0 +1,51 @@
+//- Author: Maxim Gladkih
+	Mail: mail@gladkih.su
+	Date: 3/13/13
+	Time: 11:58 AM
+	Name: Юзабилити
+article.b-article
+	h2#usability Юзабилити
+	ul.b-article__list
+		li
+			input#html5compatibilitycheck.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='html5compatibilitycheck') Проверка на совместимость HTML5
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://modernizr.com/') Modernizr JS library
+				li
+					a(href='http://ie.microsoft.com/testdrive/HTML5/CompatInspector/') Compat Inspector
+		li
+			input#custom404page.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='custom404page') Оригинальная 404 страница
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://www.alistapart.com/articles/amoreuseful404/') A more useful 404
+		li
+			input#favicon.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='favicon') Favicon
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://tools.dynamicdrive.com/favicon/') Online generator
+				li
+					a(href='http://www.thesitewizard.com/archive/favicon.shtml') How to properly link a favicon
+		li
+			input#usefriendlyurls.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='usefriendlyurls') Использование ЧПУ
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://www.seomoz.org/blog/11-best-practices-for-urls') 11 best practices for URLs
+				li
+					a(href='http://www.iis.net/learn/extensions/url-rewrite-module/url-rewrite-module-configuration-reference') URL rewriting in IIS
+				li
+					a(href='http://httpd.apache.org/docs/current/mod/mod_rewrite.html') URL rewrite in Apache
+		li.optional
+			input#addsearchfeature.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='addsearchfeature') Поиск
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://www.google.com/cse/') Поиск по сайту Google

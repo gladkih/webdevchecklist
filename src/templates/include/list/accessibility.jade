@@ -1,0 +1,37 @@
+//- Author: Maxim Gladkih
+	Mail: mail@gladkih.su
+	Date: 3/13/13
+	Time: 12:00 PM
+	Name: Доступность
+article.b-article
+	h2#accessibility Доступность
+	ul.b-article__list
+		li
+			input#accessibilityvalidation.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='accessibilityvalidation') Специальные проверки
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://accessibility.oit.ncsu.edu/accessibleu/problems.html') Common problems and solutions
+				li
+					a(href='http://achecker.ca/checker/index.php') IDI Web Accessibility Checker
+				li
+					a(href='http://www.nvda-project.org/') Test using a screen reader
+		li
+			input#colorcontrast.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='colorcontrast') Цветовая контрастность
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://www.checkmycolours.com/') Check color contrast online
+		li
+			input#wai-arialandmarks.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='wai-arialandmarks') WAI-ARIA
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://accessibility.oit.ncsu.edu/blog/2011/06/30/using-aria-landmarks-a-demonstration/') Using WAI-ARIA Landmarks
+				li
+					a(href='http://www.alistapart.com/articles/the-accessibility-of-wai-aria/') Guide to WAI-ARIA
+				li
+					a(href='http://www.punkchip.com/2010/11/aria-basic-findings/') Practical examples

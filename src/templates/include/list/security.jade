@@ -1,0 +1,61 @@
+//- Author: Maxim Gladkih
+	Mail: mail@gladkih.su
+	Date: 3/13/13
+	Time: 12:00 PM
+	Name: Безопасность
+article.b-article
+	h2#security Безопасность
+	ul.b-article__list
+		li
+			input#followbestpractices.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='followbestpractices') Follow best practices
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='https://asafaweb.com/') ASafaaWeb security analyzer
+				li
+					a(href='https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project') OWASP Top 10 project
+				li
+					a(href='https://www.owasp.org/index.php/Cheat_Sheets') OWASP Cheat Sheets
+		li
+			input#cross-sitescripting.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='cross-sitescripting') Межсайтовый скриптинг
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet') XSS cheat sheet
+				li
+					a(href='https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet') DOM based XSS cheat sheet
+				li
+					a(href='http://www.acunetix.com/cross-site-scripting/scanner/') Free XSS scanner
+		li
+			input#cross-siterequestforgery.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='cross-siterequestforgery') Подделка запросов
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://www.codinghorror.com/blog/2008/09/cross-site-request-forgeries-and-you.html') Explanation and walkthrough
+				li
+					a(href='https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet') CSRF cheat sheet
+		li.optional
+			input#secureconnectionssl.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='secureconnectionssl') Безопастное подключение (SSL)
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://support.microsoft.com/kb/299875') Setup SSL on IIS 7
+				li
+					a(href='http://www.digicert.com/ssl-certificate-installation-apache.htm') Setup SSL on Apache
+				li
+					a(href='http://certlogik.com/ssl-checker/') Online SSL checker
+				li
+					a(href='http://www.html5rocks.com/en/tutorials/security/content-security-policy/') Content Security Policy
+		li.optional
+			input#httpstricttransportsecurity.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='httpstricttransportsecurity') HTTPS
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security') MDN Overview
+				li
+					a(href='https://www.owasp.org/index.php/HTTP_Strict_Transport_Security') OWASP Overview

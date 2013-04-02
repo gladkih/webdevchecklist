@@ -1,0 +1,40 @@
+//- Author: Maxim Gladkih
+	Mail: mail@gladkih.su
+	Date: 3/13/13
+	Time: 11:59 AM
+	Name: Качество кода
+article.b-article
+	h2#code-quality Качество кода
+	ul.b-article__list
+		li
+			input#htmlvalidation.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='htmlvalidation') HTML валидатор
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://validator.w3.org/') W3C HTML validator
+		li
+			input#cssvalidation.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='cssvalidation') CSS валидатор
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://jigsaw.w3.org/css-validator/') W3C CSS validator
+				li
+					a(href='http://csslint.net/') Run CSS Lint online
+		li
+			input#worldready.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='worldready') Проверка кодировки
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://validator.w3.org/i18n-checker/') W3C i18n checker
+		li
+			input#runjslint.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='runjslint') Проверка JS
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://jslint.org/') Run JSLint online
+				li
+					a(href='http://jshint.com/') Run JSHint online

@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 					debugInfo: true
 				},
 				files: {
-					'../dev/static/css/style.dev.css': 'static/style/webdevchecklist/style.scss'
+					'../dev/static/css/style.dev.css': 'static/style/style.scss'
 				}
 			},
 			deploy: {
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
 					debugInfo: false
 				},
 				files: {
-					'../dev/static/css/style.css': 'static/style/webdevchecklist/style.scss'
+					'../dev/static/css/style.css': 'static/style/style.scss'
 				}
 			}
 		},
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 				tasks: 'uglify'
 			},
 			jade: {
-				files: 'templates/index.jade',
+				files: 'templates/**/*',
 				tasks: 'jade:dev'
 			},
 			copy: {
@@ -136,7 +136,6 @@ module.exports = function(grunt) {
 
 	// These plugins provide necessary tasks.
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
 	// Default task.
 	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'jade:deploy', 'sass:deploy', 'copy', 'csso', 'clean']);
 

@@ -1,0 +1,36 @@
+// Author: Maxim Gladkih
+// Mail: mail@gladkih.su
+// Date: 3/13/13 — 3:33 PM
+// Name: /* Меню */
+@import "includes";
+.menu {
+	@include list-unstyled;
+	@include bullets-remove;
+	margin-top: 20px;
+	border-top: solid 1px $menuBorder;
+	width: 160px;
+	&.affix {
+		position: fixed;
+		margin-top: 0;
+		top: 0;
+	}
+}
+
+.menu-item {
+	background: $black;
+	border-bottom: solid 1px $menuBorder;
+	padding: 10px 15px
+}
+
+.menu-item__link {
+	color: #fff;
+	border-bottom: dashed 1px;
+	text-decoration: none;
+	&:hover {
+		border-bottom: none;
+		color: lighten($grayLight, 10%);
+	}
+	&:visited {
+		color: #fff;
+	}
+}

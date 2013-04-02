@@ -1,0 +1,46 @@
+//- Author: Maxim Gladkih
+	Mail: mail@gladkih.su
+	Date: 3/13/13
+	Time: 11:24 AM
+	Name: Лучшие практики
+
+article.b-article
+	h2#best-practice Лучшая практика
+	ul.b-article__list
+		li
+			input#fixbrokenlinks.b-article__checkbox(type="checkbox", tabindex="1")
+			label(for="fixbrokenlinks") Проверка на наличие битых ссылок
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href="http://validator.w3.org/checklink") W3C link checker
+				li
+					a(href="http://iwebtool.com/broken_link_checker") iWebTool Broken Link Checker
+				li
+					a(href="http://home.snafu.de/tilman/xenulink.html") Xenu
+		li
+			input(type="checkbox", tabindex="1", id="spell-check", class="b-article__checkbox")
+			label(for="spell-check") Проверка орфографии
+		li
+			input#checkwebsiteinallbrowsers.b-article__checkbox(type="checkbox", tabindex="1")
+			label(for="checkwebsiteinallbrowsers") Проверить в разных браузерах
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href="http://browsershots.org/") BrowserShots.org
+				li
+					a(href="https://browserling.com/") Browserling.com
+				li
+					a(href="http://spoon.net/browsers") Spoon.net
+		li
+			input#removewwwsubdomain.b-article__checkbox(type="checkbox", tabindex="1")
+			label(for="removewwwsubdomain") Удаление 'www' поддомена
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href="http://keyvan.io/remove-www-prefix-from-urls-with-url-rewrite-module-for-iis-7-0") Remove 'www' in web.config
+				li
+					a(href="http://blog.sjinks.pro/administering/352-apache-how-to-redirect-from-www-and-back/") Apache: устанавливаем редирект
+				li
+					a(href="http://www.thesitewizard.com/apache/redirect-domain-www-subdomain.shtml") How to Redirect from Your Root Domain
+

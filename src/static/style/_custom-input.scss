@@ -1,0 +1,70 @@
+// Author: Maxim Gladkih
+// Mail: mail@gladkih.su
+// Date: 3/11/13 — 10:47 AM
+// Name: /* Custom Input */
+@import "includes";
+.custom-checkbox {
+	position: relative;
+	background: $labelBg;
+	margin-bottom: 10px;
+	font-size: 20px;
+	label {
+		cursor: pointer;
+		display: block;
+		line-height: 1em;
+		margin: -5px 0 0;
+		padding: 0 0 0 30px;
+		position: relative;
+		z-index: 1;
+		min-height: 20px;
+	}
+	input {
+		display: none;
+	}
+	&:hover {
+		background: $hoverColor;
+		input[type="checkbox"]:checked + label {
+			color: $black;
+			text-decoration: line-through;
+		}
+	}
+}
+// states
+.custom-checkbox {
+	label {
+		background-image: url(../images/sprites.png);
+		background-repeat: no-repeat;
+	}
+}
+
+.custom-checkbox {
+	label {
+		background-position: 10px -93px;
+	}
+}
+
+.custom-checkbox {
+	label {
+		padding: 20px 0 20px 40px;
+		&.hover,
+		&.focus {
+			background-position: 10px -233px;
+		}
+		&.checked {
+			background-position: 10px -373px;
+		}
+		&.checkedHover,
+		&.checkedFocus {
+			background-position: 10px -513px;
+		}
+		&.focus,
+		&.focus {
+			outline: none;
+		}
+	}
+}
+
+input[type="checkbox"]:checked + label {
+	color: $grayLight;
+	text-decoration: line-through;
+}

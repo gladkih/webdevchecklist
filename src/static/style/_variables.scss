@@ -1,21 +1,16 @@
-//  Author: Maxim Gladkih
-//  Mail: mail@gladkih.su
-//  Name: Project variables
-
+// Author: Maxim Gladkih
+// Mail: mail@gladkih.su
+// Name: Project variables
 //Support settings
 $support-ie: false;
 $support-prefix: false;
-
 // Variables colors
-// Grays
-$black: #000;
+$black: #181818;
 $grayDarker: #222;
 $grayDark: #333;
-$gray: #555;
-$grayLight: #bababa;
+$gray: #464545;
+$grayLight: #dad7d0;
 $white: #fff;
-
-// Accent colors
 $blueDark: #7F9db9;
 $blue: #2a5db0;
 $blueLight: #c3d9ff;
@@ -31,10 +26,17 @@ $yellowLighter: #fffddb;
 $orange: #f89406;
 $pink: #c3325f;
 $purple: #7a43b6;
-
 //Font
 $baseFontSize: 14px;
 $baseLineHeight: 1.41em;
-
+$sansFontFamily: Arial, "Helvetica Neue", Helvetica, sans-serif;
 //
 $footerHeight: 50px;
+$hoverColor: #bbb;
+$dropdownListColor: #bbb;
+$dropdownListBorder: #afafaf;
+$strikeColor: $grayLight;
+$numberColor: #cec9c3;
+$menuBorder: #2e2e2e;
+// Element color
+$labelBg: #f6f6f6;

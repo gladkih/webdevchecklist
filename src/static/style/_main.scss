@@ -1,0 +1,76 @@
+// Author: Maxim Gladkih
+// Mail: mail@gladkih.su
+// Date: 3/13/13 — 12:20 PM
+// Name: /* Основной блок */
+@import "includes";
+.l-main {
+	float: left;
+	width: 595px;
+	margin: 0 20px;
+	padding-bottom: 50px;
+}
+
+.b-article {
+
+}
+
+.b-article__list {
+	@include list-unstyled;
+	> li {
+		position: relative;
+	}
+}
+
+.b-article-header__link
+
+.b-article__checkbox {
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-right: 3px;
+}
+
+.sub-list-marker {
+	background: url('../images/sprites.png') 50% 22px no-repeat $labelBg;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	z-index: 9;
+	&:hover {
+		background-color: #bbb;
+	}
+	&.open {
+		background: url('../images/sprites.png') 50% -38px no-repeat $dropdownListColor;
+	}
+}
+
+.sub-list {
+	display: none;
+	@include bullets-remove;
+	padding: 0;
+	margin: -10px 0 .7em 0;
+	li {
+		background: $dropdownListColor;
+		border-bottom: solid 1px $dropdownListBorder;
+		border-top: solid 1px $dropdownListBorder;
+		margin-bottom: -1px;
+		a {
+			display: block;
+			padding: 20px 20px 20px 80px;
+			color: #fff;
+			font-size: 20px;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+			&:hover {
+				color: lighten($grayLight, 12%)
+			}
+		}
+	}
+}
+
+.sub-list__show {
+	display: block;
+}

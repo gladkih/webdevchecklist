@@ -4,390 +4,49 @@
 //- Time: 8:47 AM
 //- Name:
 !!! 5
-html(lang="ru-RU")
+html(lang='ru-RU')
 	head
-		meta(charset="UTF-8")
+		meta(charset='UTF-8')
 		title Список для проверки перед запуском сайта
 
-		meta(name="description", content="На данном сайте собраны основные моменты на которые следует обратить внимание переде тем, как выложить проект на боевой сервер.")
-		meta(name="viewport", content="width=device-width")
+		meta(name='description', content='На данном сайте собраны основные моменты на которые следует обратить внимание переде тем, как выложить проект на боевой сервер.')
+		meta(name='viewport', content='width=device-width')
 		if dev
-			link(rel="stylesheet", href="./static/css/style.dev.css")
+			link(rel='stylesheet', href='./static/css/style.dev.css')
 		else
-			link(rel="stylesheet", href="./static/css/style.min.css")
-		link(type="text/plain", rel="author", href="humans.txt")
+			link(rel='stylesheet', href='./static/css/style.min.css')
+		link(type='text/plain', rel='author', href='humans.txt')
 	body
-		div.l-main
-			div.wrapper
+		div.wrapper
+			aside.sidebar
+				include include/sidebar
+			section.l-main
 				header.l-header
 					h1.title Проверить перед выкладкой
 				section.l-content
-					article.b-article
-						h2 Лучшая практика
-						ul.b-article__list
-							li
-								input#fixbrokenlinks.b-article__checkbox(type="checkbox", tabindex="1")
-								label(for="fixbrokenlinks") Проверка на наличие битых ссылок
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href="http://validator.w3.org/checklink") W3C link checker
-									li
-										a(href="http://iwebtool.com/broken_link_checker") iWebTool Broken Link Checker
-									li
-										a(href="http://home.snafu.de/tilman/xenulink.html") Xenu
-							li
-								input(type="checkbox", tabindex="1", id="spell-check", class="b-article__checkbox")
-								label(for="spell-check") Проверка орфографии
-							li
-								input#checkwebsiteinallbrowsers.b-article__checkbox(type="checkbox", tabindex="1")
-								label(for="checkwebsiteinallbrowsers") Проверить в разных браузерах
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href="http://browsershots.org/") BrowserShots.org
-									li
-										a(href="https://browserling.com/") Browserling.com
-									li
-										a(href="http://spoon.net/browsers") Spoon.net
-							li
-								input#removewwwsubdomain.b-article__checkbox(type="checkbox", tabindex="1")
-								label(for="removewwwsubdomain") Удаление 'www' поддомена
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href="http://keyvan.io/remove-www-prefix-from-urls-with-url-rewrite-module-for-iis-7-0") Remove 'www' in web.config
-									li
-										a(href="http://blog.sjinks.pro/administering/352-apache-how-to-redirect-from-www-and-back/") Apache: устанавливаем редирект
-									li
-										a(href="http://www.thesitewizard.com/apache/redirect-domain-www-subdomain.shtml") How to Redirect from Your Root Domain
-					article.b-article
-						h2 Мобильные
-						ul.b-article__list
-							li
-								input#mobileokscoreof75.b-article__checkbox(type="checkbox", tabindex="1")
-								label(for="mobileokscoreof75") MobileOK: 75+
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href="http://validator.w3.org/mobile/") W3C mobile checker
-							li
-								input#useviewportmeta-tag.b-article__checkbox(type="checkbox", tabindex="1")
-								label(for="useviewportmeta-tag") Мета-тег 'viewport'
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/") Don’t Forget the Viewport Meta Tag
-									li
-										a(href="http://www.hanselman.com/blog/MakeYourWebsiteMobileAndIPhoneFriendlyAddHomeScreenIPhoneIconsAndAdjustTheViewPort.aspx") Make your website mobile friendly
-							li
-								input#usecorrectinputtypes.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='usecorrectinputtypes') Нужные элементы формы
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href="http://html5tutorial.info/html5-contact.php") Input type: Email, Url, Phone
-									li
-										a(href='http://mobileinputtypes.com/') mobile input types
-									li
-										a(href='http://htmlbook.ru/html/input/type') HTML Book
-							li
-								input#manualcheckusingemulators.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='manualcheckusingemulators') Проверка в эмуляторах
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://screenqueri.es/') Online media query tester
-									li
-										a(href='http://www.webdesignerdepot.com/2012/11/6-free-mobile-device-emulators-for-testing-your-site/') 6 free mobile emulators
-									li
-										a(href='http://www.opera.com/developer/tools/mobile/') Opera Mobile Emulator
-					article.b-article
-						h2 Аналитика
-						ul.b-article__list
-							li
-								input#uptimemonitoring.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='uptimemonitoring') Мониторинг
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.uptimerobot.com/') Uptime robot
-									li
-										a(href='http://www.gotsitemonitor.com/') GotSiteMonitor.com
-									li
-										a(href='http://host-tracker.com/') host-tracker.com
-							li
-								input#trafficanalysis.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='trafficanalysis') Анализ траффика
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.google.com/analytics') Google Analytics
-									li
-										a(href='http://metrika.yandex.ru/') Яндекс.Метрика
-					article.b-article
-						h2 Производительность
-						ul.b-article__list
-							li
-								input#googlepagespeedscoreof90.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='googlepagespeedscoreof90') Google Page Speed: 90+
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='https://developers.google.com/speed/pagespeed/') Google Page Speed
-							li
-								input#yahooyslowscoreof85.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='yahooyslowscoreof85') Yahoo YSlow: 85+
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://yslow.org/') Yahoo's YSlow
-							li
-								input#optimizehttpheaders.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='optimizehttpheaders') Оптимизация HTTP заголовков
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://redbot.org') redbot.org
-							li
-								input#optimizeimages.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='optimizeimages') Оптимизация изображений
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='https://github.com/imgo/imgo/') imgo
-									li
-										a(href='http://punypng.com/') PunyPNG.com
-									li
-										a(href='http://www.smushit.com/ysmush.it/') SmushIt.com
-					article.b-article
-						h2 Юзабилити
-						ul.b-article__list
-							li
-								input#html5compatibilitycheck.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='html5compatibilitycheck') Проверка на совместимость HTML5
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://modernizr.com/') Modernizr JS library
-									li
-										a(href='http://ie.microsoft.com/testdrive/HTML5/CompatInspector/') Compat Inspector
-							li
-								input#custom404page.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='custom404page') Оригинальная 404 страница
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.alistapart.com/articles/amoreuseful404/') A more useful 404
-							li
-								input#favicon.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='favicon') Favicon
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://tools.dynamicdrive.com/favicon/') Online generator
-									li
-										a(href='http://www.thesitewizard.com/archive/favicon.shtml') How to properly link a favicon
-							li
-								input#usefriendlyurls.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='usefriendlyurls') Использование ЧПУ
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.seomoz.org/blog/11-best-practices-for-urls') 11 best practices for URLs
-									li
-										a(href='http://www.iis.net/learn/extensions/url-rewrite-module/url-rewrite-module-configuration-reference') URL rewriting in IIS
-									li
-										a(href='http://httpd.apache.org/docs/current/mod/mod_rewrite.html') URL rewrite in Apache
-							li.optional
-								input#addsearchfeature.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='addsearchfeature') Поиск
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.google.com/cse/') Поиск по сайту Google
-					article.b-article
-						h2 Качество кода
-						ul.b-article__list
-							li
-								input#htmlvalidation.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='htmlvalidation') HTML валидатор
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://validator.w3.org/') W3C HTML validator
-							li
-								input#cssvalidation.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='cssvalidation') CSS валидатор
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://jigsaw.w3.org/css-validator/') W3C CSS validator
-									li
-										a(href='http://csslint.net/') Run CSS Lint online
-							li
-								input#worldready.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='worldready') Проверка кодировки
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://validator.w3.org/i18n-checker/') W3C i18n checker
-							li
-								input#runjslint.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='runjslint') Проверка JS
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://jslint.org/') Run JSLint online
-									li
-										a(href='http://jshint.com/') Run JSHint online
-					article.b-article
-						h2 SEO
-						ul.b-article__list
-							li
-								input#senseoscoreof85.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='senseoscoreof85') SenSEO: 85+
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='https://addons.mozilla.org/en-US/firefox/addon/senseo/') SenSEO for Firefox
-							li
-								input#robotstxt.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='robotstxt') robots.txt
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://robotstxt.org.ru/') Документация по robots.txt
-									li
-										a(href='http://www.robotsgenerator.com/') Онлайн генератор robots.txt
-							li
-								input#xmlsitemap.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='xmlsitemap') XML карта сайта
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.xml-sitemaps.com/') Онлайн генератор карты сайта
-					article.b-article
-						h2 Семантика
-						ul.b-article__list
-							li
-								input#addmeaningwithmicrodata.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='addmeaningwithmicrodata') Микроформаты
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://schema.org/') Schema.org
-									li
-										a(href='http://schema-creator.org/') Schema-Creator.org
-							li
-								input#checkthesemantics.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='checkthesemantics') Проверка на семантику
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.w3.org/2003/12/semantic-extractor.html') W3C semantic extractor
-					article.b-article
-						h2 Доступность
-						ul.b-article__list
-							li
-								input#accessibilityvalidation.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='accessibilityvalidation') Специальные проверки
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://accessibility.oit.ncsu.edu/accessibleu/problems.html') Common problems and solutions
-									li
-										a(href='http://achecker.ca/checker/index.php') IDI Web Accessibility Checker
-									li
-										a(href='http://www.nvda-project.org/') Test using a screen reader
-							li
-								input#colorcontrast.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='colorcontrast') Цветовая контрастность
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.checkmycolours.com/') Check color contrast online
-							li
-								input#wai-arialandmarks.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='wai-arialandmarks') WAI-ARIA
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://accessibility.oit.ncsu.edu/blog/2011/06/30/using-aria-landmarks-a-demonstration/') Using WAI-ARIA Landmarks
-									li
-										a(href='http://www.alistapart.com/articles/the-accessibility-of-wai-aria/') Guide to WAI-ARIA
-									li
-										a(href='http://www.punkchip.com/2010/11/aria-basic-findings/') Practical examples
-					article.b-article
-						h2 Безопасность
-						ul.b-article__list
-							li
-								input#followbestpractices.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='followbestpractices') Follow best practices
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='https://asafaweb.com/') ASafaaWeb security analyzer
-									li
-										a(href='https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project') OWASP Top 10 project
-									li
-										a(href='https://www.owasp.org/index.php/Cheat_Sheets') OWASP Cheat Sheets
-							li
-								input#cross-sitescripting.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='cross-sitescripting') Межсайтовый скриптинг
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet') XSS cheat sheet
-									li
-										a(href='https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet') DOM based XSS cheat sheet
-									li
-										a(href='http://www.acunetix.com/cross-site-scripting/scanner/') Free XSS scanner
-							li
-								input#cross-siterequestforgery.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='cross-siterequestforgery') Подделка запросов
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://www.codinghorror.com/blog/2008/09/cross-site-request-forgeries-and-you.html') Explanation and walkthrough
-									li
-										a(href='https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet') CSRF cheat sheet
-							li.optional
-								input#secureconnectionssl.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='secureconnectionssl') Безопастное подключение (SSL)
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://support.microsoft.com/kb/299875') Setup SSL on IIS 7
-									li
-										a(href='http://www.digicert.com/ssl-certificate-installation-apache.htm') Setup SSL on Apache
-									li
-										a(href='http://certlogik.com/ssl-checker/') Online SSL checker
-									li
-										a(href='http://www.html5rocks.com/en/tutorials/security/content-security-policy/') Content Security Policy
-							li.optional
-								input#httpstricttransportsecurity.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='httpstricttransportsecurity') HTTPS
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security') MDN Overview
-									li
-										a(href='https://www.owasp.org/index.php/HTTP_Strict_Transport_Security') OWASP Overview
-					article.b-article
-						h2 ...и последнее
-						ul.b-article__list
-							li.optional
-								input#addhumanstxt.b-article__checkbox(type='checkbox', tabindex='1')
-								label(for='addhumanstxt') Добавить humans.txt
-								a.sub-list-marker [+]
-								ul.sub-list
-									li
-										a(href='http://humanstxt.org/RU') Мы люди, не машины!
-		footer.l-footer
-			div.wrapper
+					include include/list/best-practice
+					hr
+					include include/list/mobile
+					hr
+					include include/list/analitycs
+					hr
+					include include/list/performance
+					hr
+					include include/list/code-quality
+					hr
+					include include/list/accessibility
+					hr
+					include include/list/seo
+					hr
+					include include/list/semantics
+					hr
+					include include/list/security
+					hr
+					include include/list/finally
+			footer.l-footer
 				a(href='http://gladkih.su/') Максим Гладких
 	script(src='./static/js/vendor/jquery-1.9.0.min.js')
+	script(src='./static/js/vendor/affix.min.js')
 	script(src='./static/js/vendor/custom-input.js')
 	script(src='./static/js/script.min.js')
 	script
@@ -395,11 +54,7 @@ html(lang="ru-RU")
 		_gaq.push(['_setAccount', 'UA-24203363-11']);
 		_gaq.push(['_trackPageview']);
 		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
-	script
-		$(function(){
-			$('.b-article__checkbox').customInput();
-		});

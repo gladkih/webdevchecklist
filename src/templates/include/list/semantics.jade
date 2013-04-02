@@ -1,0 +1,24 @@
+//- Author: Maxim Gladkih
+	Mail: mail@gladkih.su
+	Date: 3/13/13
+	Time: 12:00 PM
+	Name: Семантика
+article.b-article
+	h2#semantics Семантика
+	ul.b-article__list
+		li
+			input#addmeaningwithmicrodata.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='addmeaningwithmicrodata') Микроформаты
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://schema.org/') Schema.org
+				li
+					a(href='http://schema-creator.org/') Schema-Creator.org
+		li
+			input#checkthesemantics.b-article__checkbox(type='checkbox', tabindex='1')
+			label(for='checkthesemantics') Проверка на семантику
+			a.sub-list-marker [+]
+			ul.sub-list
+				li
+					a(href='http://www.w3.org/2003/12/semantic-extractor.html') W3C semantic extractor

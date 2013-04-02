@@ -1,0 +1,38 @@
+@import "includes";
+body {
+	background: $white;
+	font: {
+		family: "Segoe UI", $sansFontFamily;
+		weight: normal;
+		size: $baseFontSize;
+	}
+	line-height: $baseLineHeight;
+	border-top: solid 10px $black;
+	color: $gray;
+}
+
+a {
+	&:visited {
+		color: $linkColor;
+	}
+}
+
+.wrapper {
+	@include clearfix;
+	margin: 0 auto;
+	position: relative;
+	max-width: 960px;
+}
+
+hr {
+	border-top: solid 1px $grayLight;
+	margin: 10px 0 35px;
+}
+
+.l-header {
+	padding-top: 1px;
+}
+
+.title {
+	text-align: center;
+}
