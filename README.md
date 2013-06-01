@@ -9,5 +9,5 @@ http://gladkih.su<br/>
 Идея взята с <a href="https://github.com/ligershark/webdevchecklist.com" target="_blank">webdevchecklist.com</a>
 <hr/>
 **Требования**<br/>
-Необходим сборник scss миксинов <a href="https://github.com/BlackTears/dark-beer">dark-beer</a>.<br/>
+Необходим сборник scss миксинов <a href="https://github.com/gladkih/dark-beer">dark-beer</a>.<br/>
 Положить в src/style/
